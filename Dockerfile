@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 		wget \
 		cmake \
 		build-essential \
+		pkg-config \
 		valgrind \
 		gcovr \
 		&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
