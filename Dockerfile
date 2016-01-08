@@ -19,3 +19,5 @@ RUN wget https://cmocka.org/files/1.0/cmocka-1.0.1.tar.xz && \
 		mkdir build && cd build && cmake -G "Unix Makefiles" .. && \
 		make && make install && \
 		cd ../.. && rm -rf cmocka*
+
+RUN ldconfig
