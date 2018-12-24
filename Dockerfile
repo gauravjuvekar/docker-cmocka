@@ -12,4 +12,5 @@ RUN apt-get update && apt-get install -y \
 		valgrind \
 		gcovr \
         libcmocka0 \
+        libcmocka-dev \
 		&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
