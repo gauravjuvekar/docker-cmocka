@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 MAINTAINER Gaurav Juvekar <gauravjuvekar@gmail.com>
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y \
 		binutils \
 		git \
@@ -9,5 +11,5 @@ RUN apt-get update && apt-get install -y \
 		pkg-config \
 		valgrind \
 		gcovr \
-        cmocka \
+        libcmocka0 \
 		&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
